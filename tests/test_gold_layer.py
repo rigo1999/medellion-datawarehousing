@@ -115,7 +115,7 @@ class TestGoldLayer:
         )
 
         assert "revenue" in result.columns
-        assert result["revenue"].tolist()[:3] == [50.0, 200.0, 450.0]
+        assert result["revenue"].tolist() == [50.0, 200.0, 450.0]
 
     def test_read_and_list_tables(self):
         """Test reading and listing tables."""

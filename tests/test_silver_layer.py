@@ -60,7 +60,7 @@ class TestSilverLayer:
             df, "test_table", transformations=[double_values]
         )
 
-        assert result["value"].tolist()[:2] == [20, 40]
+        assert result["value"].tolist() == [20, 40]
 
     def test_clean_column_names(self):
         """Test column name standardization."""
